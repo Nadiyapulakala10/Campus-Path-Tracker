@@ -139,7 +139,7 @@ Nearby User & Location Output
 | Firebase | Realtime Database & Hosting |
 | GPS / Geolocation API | Live Location Tracking |
 | Email JS | Sending OTP'S |
-| Fluuter map(open streetmap) &latlog2 | for using maps in application |
+| Flutter map(open streetmap) &latlog2 | for using maps in application |
 | Verilog | Hardware-Level Logic |
 | VS Code | Development Environment |
 
