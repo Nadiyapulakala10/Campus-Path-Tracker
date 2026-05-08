@@ -8,7 +8,7 @@
 Campus Path Tracker is a real-time campus safety and proximity awareness system designed to help students locate friends during partial network failures such as weak signals, one-way communication, or inaudible calls.
 
 The system enables users to:
-- Search friends using Name / Roll Number
+- Search friends using Name
 - Identify approximate campus locations
 - Detect nearby trusted users
 - Receive AI-powered helper suggestions
@@ -58,7 +58,6 @@ Campus Path Tracker solves this issue using intelligent real-time campus visibil
 ## 🔍 Smart Friend Search
 Search users using:
 - Name
-- Roll Number
 
 ## 📍 Real-Time Location Tracking
 Detect approximate campus blocks and locations instantly.
@@ -69,14 +68,11 @@ Identify nearby trusted users for immediate help.
 ## 🧠 AI-Powered Recommendations
 AI suggests the nearest available helper during emergencies.
 
-## 📶 Signal Strength Monitoring
-Detect weak connectivity zones inside campus.
-
-## 🚨 Emergency Alerts
-Generate alerts during unsafe situations.
-
 ## 🌐 Interactive Dashboard
 Simple and user-friendly interface for students.
+
+## 📞 Calls and Messages
+can make calls and messages to friends nearby.
 
 ## 🔌 Verilog-Based Logic
 Implements hardware-level signal and proximity processing.
@@ -91,8 +87,6 @@ The AI module performs intelligent decision-making based on proximity and connec
 
 - Predict nearest available helper
 - Estimate location during weak connectivity
-- Detect emergency conditions
-- Analyze movement patterns
 
 ### 🔹 Example
 
@@ -117,14 +111,6 @@ Verilog is used to simulate hardware-level proximity detection and signal proces
 - Proximity Detection
 - Communication Switching Logic
 
-### 🔹 Example Logic
-
-| Signal Strength | Status |
-|----------------|---------|
-| Strong Signal | Near |
-| Medium Signal | Nearby |
-| Weak Signal | Far |
-
 ---
 
 # 🌐 System Architecture
@@ -132,9 +118,9 @@ Verilog is used to simulate hardware-level proximity detection and signal proces
 ```text
 Mobile Devices
        ↓
-GPS / Bluetooth / Wi-Fi
+GPS / Wi-Fi
        ↓
-Frontend Website / App
+Frontend App
        ↓
 Firebase Realtime Database
        ↓
@@ -149,10 +135,11 @@ Nearby User & Location Output
 
 | Technology | Purpose |
 |------------|----------|
-| HTML / CSS / JavaScript | Frontend Development |
+| Flutter | Frontend Development |
 | Firebase | Realtime Database & Hosting |
 | GPS / Geolocation API | Live Location Tracking |
-| Bluetooth | Nearby User Detection |
+| Email JS | Sending OTP'S |
+| Fluuter map(open streetmap) &latlog2 | for using maps in application |
 | Verilog | Hardware-Level Logic |
 | VS Code | Development Environment |
 
@@ -161,7 +148,7 @@ Nearby User & Location Output
 # 📍 How the System Works
 
 ### Step 1️⃣
-User logs into the system
+User registers/logs into the system
 
 ### Step 2️⃣
 GPS captures live location
@@ -170,18 +157,20 @@ GPS captures live location
 Location data is stored in Firebase
 
 ### Step 4️⃣
-User searches friend by Name or Roll Number
+Make connections between known users
 
 ### Step 5️⃣
+User searches friend by Name
+
+### Step 6️⃣
 System retrieves:
 - Campus block location
 - Nearby users
-- Signal status
-
-### Step 6️⃣
-AI selects the nearest helper
 
 ### Step 7️⃣
+AI selects the nearest helper
+
+### Step 8️⃣
 Emergency alerts are generated if required
 
 ---
@@ -192,7 +181,6 @@ The system combines multiple technologies for better accuracy:
 
 - 📍 GPS → Accurate outdoor positioning
 - 📶 Wi-Fi → Better indoor support
-- 🔵 Bluetooth → Nearby user detection
 
 ---
 
