@@ -396,10 +396,12 @@ Location updates are triggered by a **10-metre distance filter** rather than a f
 
 - Indoor Navigation & Route Guidance
 - Voice Alerts
-- IoT Wearable Integration
-- ML-Based Movement Prediction
 - Emergency SOS System
-- Offline Mesh Communication
+- Battery status of people
+- Disconnect option for users
+- student can have direct access to see faculty location
+- Faculty can have option to turn on / turn off their location
+- call and message feature can be implemented in a better way for user experince
 
 ---
 
